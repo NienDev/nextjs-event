@@ -9,11 +9,11 @@ const SpecificId = () => {
   const router = useRouter();
   const eventId = router.query.id;
   const event = getEventById(eventId);
-  const { title, date, location, image } = event;
   if (!event) {
     return <p>No Event Found</p>;
   }
 
+  const { title, date, location, image } = event;
   return (
     <>
       <EventSummary title={title} />

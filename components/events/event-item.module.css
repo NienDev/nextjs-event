@@ -90,6 +90,11 @@
   height: 1.25rem;
 }
 
+/* .summary h2 {
+  font-size: 16px;
+  margin: 1rem;
+} */
+
 @media (min-width: 768px) {
   .item {
     flex-direction: row;
@@ -113,5 +118,28 @@
   .actions {
     flex-direction: row;
     justify-content: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 16px;
+    text-align: left;
+  }
+  .date,
+  .address {
+    font-size: 12px;
+    text-align: left;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .img {
+    height: 200px;
+  }
+  .content {
+    padding: 0 12px;
   }
 }

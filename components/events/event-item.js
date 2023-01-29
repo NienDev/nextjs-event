@@ -21,7 +21,7 @@ const EventItem = ({ title, image, date, location, id }) => {
       </div>
       <div className={classes.content}>
         <div className={classes.summary}>
-          <h2>{title}</h2>
+          <h2 className={classes.title}>{title}</h2>
           <div className={classes.date}>
             <time>{date}</time>
           </div>
